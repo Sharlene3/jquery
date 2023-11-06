@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <!-- 嵌入jQuery的函式庫CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#show").click(function () {
+                $("#element").show();
+            })
+            $("#hide").click(function () {
+                $("#element").hide();
+            })
+            $("#showAsSlide").click(function () {
+                $("#element").show("medium");
+            })
+            $("#hideAsSlide").click(function () {
+                $("#element").hide("medium");
+            })
+            $("#fadeIn").click(function () {
+                $("#element").fadeIn();
+            })
+            $("#fadeOut").click(function () {
+                $("#element").fadeOut();
+            })
+            $("#slideDown").click(function () {
+                $("#element").slideDown();
+            })
+            $("#slideUp").click(function () {
+                $("#element").slideUp();
+            })
+            $("#toggle").click(function () {
+                $("#element").toggle();
+            })
+            $("#slideToggle").click(function () {
+                $("#element").slideToggle();
+            })
+            $("#fadeToggle").click(function () {
+                $("#element").fadeToggle();
+            })
+            $("#css").click(function () {
+                $("#element").css({color: "red"});
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <input id="show" type="button" value="顯示" />
+    <input id="hide" type="button" value="隱藏" />
+    <input id="showAsSlide" type="button" value="滑入1" />
+    <input id="hideAsSlide" type="button" value="滑出1" />
+    <input id="slideDown" type="button" value="滑入2" />
+    <input id="slideUp" type="button" value="滑出2" />
+    <input id="fadeIn" type="button" value="淡入" />
+    <input id="fadeOut" type="button" value="淡出" />
+    <input id="toggle" type="button" value="顯示/隱藏" />
+    <input id="slideToggle" type="button" value="滑入/滑出" />
+    <input id="fadeToggle" type="button" value="淡入/淡出" />
+    <input id="css" type="button" value="定義css" />
+    <p id="element">我在這裡！</p>
+</body>
+
+</html>
